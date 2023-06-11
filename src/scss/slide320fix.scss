@@ -1,0 +1,23 @@
+@media (max-width: 375px) {
+  .container {
+    .main {
+      .main__swiper {
+        .swiper-wrapper {
+          .swiper-slide-next { 
+            .brand-list__member {
+              transform: translateX(0);
+            }
+          }
+          .swiper-slide-prev {
+            .brand-list__member {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+}

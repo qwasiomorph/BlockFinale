@@ -1,0 +1,19 @@
+.modalPos {
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.content-part {
+  opacity: 1;
+  filter: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.whileModalActive {
+  opacity: 0.25;
+  filter: blur(5px);
+}

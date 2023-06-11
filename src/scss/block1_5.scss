@@ -1,0 +1,204 @@
+@import './colors.scss';
+
+.block1-5 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  .header {
+    .header__title {
+      color: $graytext;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+      padding: 1em;
+      background: linear-gradient(to right, $shadywhite 50%, $white 75%);
+    }
+  }
+  .main {
+    background-color: $shadywhite;
+    height: 100%;
+    
+    .main__swiper {
+      padding: 1em;
+      .more-button {
+        display: none;
+      }
+
+      .brand-list {
+        
+        
+        .swiper-slide {
+
+          .brand-list__member {
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            width: 240px;
+            border: 1px solid $navBefore;
+            border-radius: 6px;
+            background-color: $white;
+            .brand-list__logo {
+              padding: 4px 0;
+              display: flex;
+              align-content: center;
+              height: 36px;
+            }
+            .brand-list__button {
+              width: 40px;
+              height: 40px;
+              border: 2px solid $pinkButton;
+              border-radius: 50%;   
+              background: url(../img/icon_arrow.svg) no-repeat center; 
+              button {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+              }
+            }            
+          }
+        }
+        .swiper-slide-next { 
+          .brand-list__member {
+            transform: translateX(-27%);
+          }
+        }
+        .swiper-slide-prev {
+          .brand-list__member {
+            transform: translateX(27%);
+          }
+        }
+      }
+      
+    }
+    .pagination-wrapper {
+
+      .swiper-pagination {
+        position:  relative !important;
+        
+        .swiper-pagination-bullet {
+          background-color: $paginationBg;
+          width: 12px;
+          height: 12px;
+          margin: 0 6px !important;
+        }
+        
+        .swiper-pagination-bullet-active {
+          background-color: $paginationActive;
+        } 
+      }
+    }
+    .main__pagination {
+      padding: 1em;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .swiper-slide-next .brand-list__member {
+      transform: none;
+  }
+  
+  .swiper-slide-prev .brand-list__member {
+      transform: none;
+  }
+}
+
+@media (min-width: 420px) and (orientation: landscape) {
+  .swiper1 {
+    .swiper-wrapper {  
+      .swiper-slide {
+            height: 78px;
+      }
+        .swiper-slide-next .brand-list__member {
+            transform: none;
+      }
+        .swiper-slide-next .brand-list__member {
+            position: absolute;
+            right: 0;
+            
+      }
+        .swiper-slide-prev .brand-list__member {
+            transform: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 788px) {
+  .block1-5 {
+    .header {
+      .header__title {
+        padding-left: 2em;
+        background: linear-gradient(to right, $shadywhite 50%, $white 75%);
+      }
+    }
+    .main {
+      .swiper1 {
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: grid-template-rows 0.5s ease-in-out;
+        
+        .brand-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          min-height: calc(72px + 72px + 2em);
+          overflow: hidden;
+          row-gap: 1em;
+          column-gap: 2em;
+          
+          .swiper-slide {
+            .brand-list__member {             
+              margin-right: 0 !important;
+              transform: translateX(0);
+              width: 89%;
+            }
+
+            .swiper-slide-next .brand-list__member {
+              transform: none;
+            }
+          
+            .swiper-slide-prev .brand-list__member {
+              transform: none;
+            }
+
+          }
+        }
+        .expand2 {
+          display: flex;
+        }
+        .expanded {
+          height: fit-content;
+        }
+      }
+      .swiper-expanded {
+        grid-template-rows: 1fr;
+      }
+      .pagination-wrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .block1-5 {
+    .header {
+      .header__title {
+        padding-left: 2em;
+        background: linear-gradient(to right, $shadywhite 50%, $white 75%);
+      }
+    }
+    .main {
+      .main__swiper {
+        .brand-list {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+    }
+  }
+}
+

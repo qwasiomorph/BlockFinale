@@ -1,0 +1,117 @@
+@import './colors.scss';
+
+::-webkit-input-placeholder {
+  color:    $paginationActive;
+}
+:-moz-placeholder { 
+ color:    $paginationActive;
+ opacity:  1;
+}
+::-moz-placeholder {
+ color:    $paginationActive;
+ opacity:  1;
+}
+:-ms-input-placeholder {
+ color:    $paginationActive;
+}
+::-ms-input-placeholder { 
+ color:    $paginationActive;
+}
+
+::placeholder { 
+ color:    $paginationActive;
+}
+
+.modal-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $white;
+  height: fit-content;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  .feedback__header {
+    padding: 1.5em 1em;
+  }
+  main {
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "TTLakes Bold";
+      padding: 0.25em;
+      padding-left: 0.5em;
+      position: relative;
+      font-weight: bold;
+    }
+    h1::before {
+      position: absolute;
+      content: '';
+      left: -3px;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background-color: $beforeText;
+      border-radius: 8px;
+    }
+    .feedback__form {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      .feedback__input {
+        font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        border: 1px solid $navBefore;
+        border-radius: 8px;
+        padding: 0.75em 1em;
+      }
+      p {
+        color: $graytext;
+        a {
+          color: $pinkButton;
+        }
+      }
+      .submit {
+          align-self: flex-end;
+          font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
+          background-color: $pinkButton;
+          height: 2rem;
+          border-radius: 1rem;
+          color: $white;
+          line-height: 24px;
+          letter-spacing: -0.15px;
+          text-transform: uppercase;
+          font-weight: bold;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: fit-content;
+          transition: all 1s ease;
+          padding: 0.5em 1.5em;
+          .arrow {
+            display: block;
+            transform: translateY(-1px) translateX(9px);  
+            width: 7px;
+            height: 1em;
+            background: url(../img/icon_arrow-white.svg) center center no-repeat;
+          }
+      }
+    }
+  }
+}
+
+.modal-right--active {
+  transform: translateX(0%);
+  
+}
+
+@media (min-width: 768px) {
+  .modal-right--active  {
+    
+    width: 320px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+}

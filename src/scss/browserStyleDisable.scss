@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 16px;
+}
+
+textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+

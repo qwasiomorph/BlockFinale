@@ -1,0 +1,65 @@
+@import './colors.scss';
+
+.block1-6_repair {
+  .main {
+    background-color: $shadywhite;
+    .main__swiper {
+      .brand-list {
+        .swiper-slide {
+          .brand-list__member {
+            height: 160px;
+            .hardware__caption {
+              color: $text;
+            }
+            .brand-list__button {
+              align-self: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .block1-6_repair {
+    .main {
+      .swiper2 {
+        .hardware {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          overflow: hidden;
+          row-gap: 1em;
+          column-gap: 2em;
+          .swiper-slide-next .brand-list__member {
+            transform: none;
+          }
+        
+          .swiper-slide-prev .brand-list__member {
+            transform: none;
+          }
+
+        }
+        .expand3 {
+          display: flex;
+          display: none;
+        }
+      }
+      .pagination-wrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .block1-6_repair {
+    .main {
+      .swiper2 {
+        .hardware {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+    }
+  }
+}

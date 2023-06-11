@@ -1,0 +1,39 @@
+@import './colors.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  background-color: $shadywhite;
+  div {
+    .footer__text {
+      color: $graytext;
+      text-align: center;
+      padding-bottom: 0.5em;
+      padding-top: 0.5em;
+      font-weight: bold;
+      a {
+       text-decoration: none; 
+       color: inherit;
+      }
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 1.5em;
+    gap: 2em;
+    div {
+      .footer__text {
+        padding: 0;
+        text-align: justify;
+      }
+    }
+  }
+}
