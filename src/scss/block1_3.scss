@@ -365,6 +365,11 @@
       .header__logo-wrapper {
         display: none;
       }
+      .header__nav-wrapper {
+        .header__contact {
+          display: none;
+        }
+      }
     }
     .block1__main {
       h1 {
