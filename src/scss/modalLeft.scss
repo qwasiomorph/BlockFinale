@@ -143,9 +143,11 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   .modal-left {
+    
     .mobile-menu {
+      
       position: static;
       transform: translateX(0);
       height: fit-content;
