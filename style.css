@@ -321,6 +321,8 @@ section {
       display: none; }
     .block1-3 .header .header__nav-wrapper .header__contact {
       display: none; }
+    .block1-3 .header .header__nav-wrapper .header__nav .header__repair h3 {
+      font-size: 1em; }
   .block1-3 .block1__main h1 {
     position: absolute;
     top: 1rem; } }
@@ -957,6 +959,8 @@ section {
       display: none; }
     .block1-3 .header .header__nav-wrapper .header__contact {
       display: none; }
+    .block1-3 .header .header__nav-wrapper .header__nav .header__repair h3 {
+      font-size: 1em; }
   .block1-3 .block1__main h1 {
     position: absolute;
     top: 1rem; } }
