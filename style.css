@@ -481,7 +481,9 @@ section {
 
 @media (min-width: 1120px) {
   .block1-6_repair .main .swiper2 .hardware {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 1em;
+         column-gap: 1em; } }
 
 .price-list-container .main {
   background-color: #F8F8F8; }
@@ -1147,7 +1149,7 @@ section {
   transition: all 0.5s ease-in-out; }
   .modal-right .feedback__header {
     padding: 1.5em 1em; }
-  .modal-right main h1 {
+  .modal-right section h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: "TTLakes Bold";
@@ -1155,7 +1157,7 @@ section {
     padding-left: 0.5em;
     position: relative;
     font-weight: bold; }
-  .modal-right main h1::before {
+  .modal-right section h1::before {
     position: absolute;
     content: '';
     left: -3px;
@@ -1164,22 +1166,22 @@ section {
     height: 100%;
     background-color: #41F6D7;
     border-radius: 8px; }
-  .modal-right main .feedback__form {
+  .modal-right section .feedback__form {
     padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em; }
-    .modal-right main .feedback__form .feedback__input {
+    .modal-right section .feedback__form .feedback__input {
       font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
       display: block;
       border: 1px solid #EAEAEA;
       border-radius: 8px;
       padding: 0.75em 1em; }
-    .modal-right main .feedback__form p {
+    .modal-right section .feedback__form p {
       color: #7E7E82; }
-      .modal-right main .feedback__form p a {
+      .modal-right section .feedback__form p a {
         color: #FF3E79; }
-    .modal-right main .feedback__form .submit {
+    .modal-right section .feedback__form .submit {
       align-self: flex-end;
       font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
       background-color: #FF3E79;
@@ -1198,7 +1200,7 @@ section {
       width: fit-content;
       transition: all 1s ease;
       padding: 0.5em 1.5em; }
-      .modal-right main .feedback__form .submit .arrow {
+      .modal-right section .feedback__form .submit .arrow {
         display: block;
         transform: translateY(-1px) translateX(9px);
         width: 7px;
