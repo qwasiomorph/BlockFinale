@@ -196,6 +196,9 @@
       .main__swiper {
         .brand-list {
           grid-template-columns: 1fr 1fr 1fr 1fr;
+          .brand-list__member {
+            min-width: 240px;
+          }
         }
       }
     }
