@@ -448,7 +448,9 @@ section {
     padding-left: 2em;
     background: linear-gradient(to right, #F8F8F8 50%, #ffffff 75%); }
   .block1-5 .main .main__swiper .brand-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .block1-5 .main .main__swiper .brand-list .brand-list__member {
+      min-width: 240px; } }
 
 .block1-6_repair .main {
   background-color: #F8F8F8; }
@@ -1079,7 +1081,7 @@ section {
     width: 320px;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1500px) {
   .modal-left .mobile-menu {
     position: static;
     transform: translateX(0);
