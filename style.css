@@ -67,7 +67,8 @@ section {
     .block1-3 .header .header__nav-wrapper .header__nav {
       position: relative;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      width: calc(100px + 2em); }
     .block1-3 .header .header__nav::before {
       content: '';
       position: absolute;
@@ -703,7 +704,8 @@ section {
     .block1-3 .header .header__nav-wrapper .header__nav {
       position: relative;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      width: calc(100px + 2em); }
     .block1-3 .header .header__nav::before {
       content: '';
       position: absolute;
